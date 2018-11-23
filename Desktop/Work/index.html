@@ -20,7 +20,7 @@
 		
     <nav class="navbar navbar-expand-md sticky-top">
 
-                <a class="navbar-brand" href="#">LKG TREDAS</a>
+                <a class="navbar-brand" href="#">KSV PRASAD</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -32,42 +32,42 @@
 
                     <li class="nav-item current" id="firstnav">
 
-                        <a class="nav-link" href="#">OMHE</a>
+                        <a class="nav-link" href="#">HOME</a>
 
                       </li>
 
                       <li class="nav-item">
 
-                        <a class="nav-link" href="#skill-bar">KSLISL</a>
+                        <a class="nav-link" href="#skill-bar">SKILLS</a>
 
                       </li>
 
                       <li class="nav-item">
 
-                        <a class="nav-link" href="#">JEPROCTS</a>
+                        <a class="nav-link" href="#">PROJECTS</a>
 
                       </li> 
 
                       <li class="nav-item">
 
-                        <a class="nav-link" href="#">NTACTCO</a>
+                        <a class="nav-link" href="#">CONTACT</a>
 
                       </li>  
 
                   </ul>
                 </div>  
             </nav>
-		<div class="land">
+		<div class="land" id="home">
 
 					<div class="transparent">
 
 						<div class="jumbotron" style="background:transparent !important" id="banner">
 
-							<h2>JARE SDEWQ LOPERDEVQ</h2>
+							<h2>MEAN STACK DEVELOPER</h2>
 
 							<br><br>
 
-							<p>rHei het neo hwo anc ribgn uslo ot oury bsiweet</p>
+							<p>Hire the one who can bring soul to your website</p>
 
 						</div>
 
@@ -100,10 +100,13 @@
                             var options = {title: 'Skills( on a scale of 10 )'}; 
 
                             // Instantiate and draw the chart.
-                            var chart = new google.visualization.ColumnChart(document.getElementById('contain'));
+                            var chart = new google.visualization.BarChart(document.getElementById('contain'));
                             chart.draw(data, options);
                             }
                             google.charts.setOnLoadCallback(drawChart);
+                            $(window).resize(function(){
+                                                        drawChart();
+                                                      });
                 </script>
     </div>
 </body>
